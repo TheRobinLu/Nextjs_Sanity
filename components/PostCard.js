@@ -8,7 +8,7 @@ const PostCard = () => {
         <Image
           width="450"
           height="500"
-          src="https://via.placeholder.com/450"
+          src="https://via.placeholder.com/450.png"
           className="card-img-top"
           alt="..."
         />
