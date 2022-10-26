@@ -2,13 +2,16 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-
-}
-
-//module.exports = nextConfig
-
-module.exports = {
   images: {
-    domains: ['via.placeholder.com'],
+    domains: ['via.placeholder.com', 'cdn.sanity.io'],
   },
+
 }
+
+module.exports = nextConfig
+
+// module.exports = {
+//   images: {
+//     domains: ['via.placeholder.com', 'cdn.sanity.io'],
+//   },
+// }

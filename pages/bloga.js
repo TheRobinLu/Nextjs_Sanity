@@ -3,7 +3,7 @@ import imageUrlBuider from "@sanity/image-url";
 import {sanityClient} from "../sanityClient";
 import Image from "next/image";
 import PostCard from "../components/PostCard";
-const Blog = ({posts, b}) => {
+const Bloga = ({posts, b}) => {
   const [mappedPosts, setMappedPosts] = useState([]);
   useEffect(() => {
     if (posts.length) {
@@ -59,4 +59,4 @@ export const getServerSideProps = async (context) => {
     };
   }
 };
-export default Blog;
+export default Bloga;
