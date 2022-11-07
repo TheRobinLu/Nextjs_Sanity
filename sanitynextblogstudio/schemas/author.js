@@ -38,6 +38,16 @@ export default {
         },
       ],
     },
+    {
+      name: 'gender',
+      title: 'Gender',
+      type: 'string',
+      options: {
+        source: 'name',
+        maxLength: 10,
+      },
+       
+    },
   ],
   preview: {
     select: {

@@ -61,5 +61,16 @@ export default {
       type: 'image',
       options: {hotspot: true},
     },
+    {    
+      title: 'yourube URL',
+      type: 'object',
+      name: 'youtube',
+      fields: [
+        {
+          name: 'URL',
+          type: 'url'
+        }
+      ],
+    }
   ],
 }
