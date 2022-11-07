@@ -15,3 +15,4 @@ module.exports = nextConfig
 //     domains: ['via.placeholder.com', 'cdn.sanity.io'],
 //   },
 // }
+//this is test
