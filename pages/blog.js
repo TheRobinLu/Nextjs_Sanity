@@ -1,21 +1,21 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import imageUrlBuider from "@sanity/image-url";
-import {sanityClient} from "../sanityClient";
+import { sanityClient } from "../sanityClient";
+import { useNextSanityImage } from 'next-sanity-image';
 import Image from "next/image";
 import PostCard from "../components/PostCard";
-const Blog = ({posts, b}) => {
+const Blog = ({ posts }) => {
   const [mappedPosts, setMappedPosts] = useState([]);
   useEffect(() => {
     if (posts.length) {
-      const imageBuilder = imageUrlBuider(sanityClient);
+      //const imageBuilder = imageUrlBuider(sanityClient);
+
       setMappedPosts(
         posts.map((post) => {
+
           return {
             ...post,
-            mainImage: imageBuilder
-              .image(post.mainImage)
-              .width(450)
-              .height(500),
+
           };
         })
       );
@@ -32,7 +32,7 @@ const Blog = ({posts, b}) => {
           mappedPosts.length &&
           mappedPosts.map((post, index) => (
             <PostCard data={post} key={index} />
-            ))}
+          ))}
       </div>
     </div>
   );

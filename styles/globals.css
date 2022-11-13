@@ -19,8 +19,17 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
+}
+
+.bg-color {
+  background-color: lightblue;
+}
+
+.body-color{
+  background-color: lightsteelblue;
 }
